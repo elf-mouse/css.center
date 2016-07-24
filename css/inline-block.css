@@ -1,0 +1,30 @@
+/**
+ * HTML:
+ * <div class="center-container is-inline">
+ *   <div class="center-block">
+ *     <!-- CONTENT -->
+ *   </div>
+ * </div>
+ */
+
+.center-container.is-inline {
+  overflow: auto;
+  text-align: center;
+}
+
+.center-container.is-inline:after,
+.is-Inline .Center-Block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.center-container.is-inline:after {
+  height: 100%;
+  margin-left: -.25em; /* To offset spacing. May vary by font */
+  content: '';
+}
+
+.is-inline .center-block {
+  max-width: 99%; /* Prevents issues with long content causes the content block to be pushed to the top */
+  /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
+}

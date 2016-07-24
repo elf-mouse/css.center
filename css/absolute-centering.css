@@ -1,0 +1,113 @@
+.absolute-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+
+/* Within Container */
+
+.center-container {
+  position: relative;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+
+/* Within Viewport */
+
+.absolute-center.is-fixed {
+  position: fixed;
+  z-index: 999;
+}
+
+
+/* Offsets */
+
+.absolute-center.is-right {
+  right: 20px;
+  left: auto;
+  text-align: right;
+}
+
+.absolute-center.is-left {
+  right: auto;
+  left: 20px;
+  text-align: left;
+}
+
+
+/* Responsive */
+
+.absolute-center.is-responsive {
+  width: 60%;
+  min-width: 200px;
+  max-width: 400px;
+  height: 60%;
+  padding: 40px;
+}
+
+
+/* Overflow */
+
+.absolute-center.is-overflow {
+  overflow: auto;
+}
+
+
+/* Resizing */
+
+.absolute-center.is-resizable {
+  overflow: auto;
+  min-width: 20%;
+  max-width: 80%;
+  min-height: 20%;
+  max-height: 80%;
+  resize: both;
+}
+
+
+/**
+ * Images
+ *
+ * HTML:
+ * <img src="http://placekitten.com/g/500/200" class="absolute-center is-image" alt="">
+ */
+
+.absolute-center.is-image {
+  height: auto;
+}
+
+.absolute-center.is-image img {
+  width: 100%;
+  height: auto;
+}
+
+
+/**
+ * Variable Height
+ *
+ * Javascript:
+ * // Modernizr Test for Variable Height Content
+ * Modernizr.testStyles('#modernizr { display: table; height: 50px; width: 50px; margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; }', function(elem, rule) {
+ *   Modernizr.addTest('absolutecentercontent', Math.round(window.innerHeight / 2 - 25) === elem.offsetTop);
+ * });
+ */
+
+.absolutecentercontent .absolute-center.is-variable {
+  display: table;
+  height: auto;
+}

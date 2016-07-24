@@ -1,0 +1,10 @@
+.is-negative {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  margin-top: -120px; /* (height + padding)/2 */
+  margin-left: -170px; /* (width + padding)/2 */
+  padding: 20px;
+}

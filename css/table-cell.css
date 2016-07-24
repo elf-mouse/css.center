@@ -1,0 +1,24 @@
+/**
+ * HTML:
+ * <div class="center-container is-table">
+ *   <div class="table-cell">
+ *     <div class="center-block">
+ *       <!-- CONTENT -->
+ *     </div>
+ *   </div>
+ * </div>
+ */
+
+.center-container.is-table {
+  display: table;
+}
+
+.is-table .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.is-table .center-block {
+  width: 50%;
+  margin: 0 auto;
+}
